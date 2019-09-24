@@ -9,8 +9,9 @@ jobs:
     - uses: actions/checkout@master
       with:
         fetch-depth: 1
-        path: action-a
+        path: ./action-a
     - run: pwd 
+    - run: ls -la ..
     - run: ls -la 
     - run: ls -la action-a 
     - uses: ./action-a
