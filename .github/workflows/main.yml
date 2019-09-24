@@ -10,6 +10,9 @@ jobs:
       with:
         fetch-depth: 1
         path: action-a
+    - run: pwd 
+    - run: ls -la 
+    - run: ls -la action-a 
     - uses: ./
       env:
         MY_NAME: "Alain"
